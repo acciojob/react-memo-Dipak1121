@@ -43,7 +43,8 @@ const App = ()=>{
             {
                 todo.map((item, index)=>{
                     return(
-                        <p key={index}>{item}</p>
+                        <p id="todo-0" key={index}>{item}</p>
+                        
                     )
                 })
             }
@@ -59,7 +60,7 @@ const App = ()=>{
             onChange={handleSkill}
             value={skill}></input>
             <button id="skill-btn" onClick={addMemo}> Add Skill </button>
-            <ul>
+            <ul id="item-jumbotron">
                 {
                     memoSkill.map((item, index)=>{
                         return(
