@@ -38,7 +38,7 @@ const App = ()=>{
     return(
         <div id="main">
             <h2>My Todos</h2>
-            <button id="#add-todo-btn" 
+            <button id="add-todo-btn" 
             onClick={handleTodo}> Add Todo </button>
             {
                 todo.map((item, index)=>{
@@ -49,7 +49,7 @@ const App = ()=>{
             }
             <hr/>
             <p>Count: {count}</p>
-            <button id={incr-cnt}
+            <button id="incr-cnt"
             onClick={handleCount}> + </button>
             <hr/>
             <hr/>
