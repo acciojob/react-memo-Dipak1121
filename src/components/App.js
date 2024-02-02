@@ -34,11 +34,12 @@ const App = ()=>{
     useEffect(()=>{
         document.title = `Count: ${count}`;
     }, [count])
-    
+
     return(
-        <div>
+        <div id="main">
             <h2>My Todos</h2>
-            <button onClick={handleTodo}> Add Todo </button>
+            <button id="#add-todo-btn" 
+            onClick={handleTodo}> Add Todo </button>
             {
                 todo.map((item, index)=>{
                     return(
@@ -48,12 +49,13 @@ const App = ()=>{
             }
             <hr/>
             <p>Count: {count}</p>
-            <button onClick={handleCount}> + </button>
+            <button id={incr-cnt}
+            onClick={handleCount}> + </button>
             <hr/>
             <hr/>
 
             <h2> Memo </h2>
-            <input type="text" placeholder="Enter Skill"
+            <input id="skill-input" type="text" placeholder="Enter Skill"
             onChange={handleSkill}
             value={skill}></input>
             <button onClick={addMemo}> Add Skill </button>
