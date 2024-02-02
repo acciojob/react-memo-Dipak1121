@@ -49,9 +49,9 @@ const App = ()=>{
                 })
             }
             <hr/>
-            <p>Count: {count}</p>
+            <p>Count: </p>
             <button id="incr-cnt"
-            onClick={handleCount}> + </button>
+            onClick={handleCount}>{count}</button>
             <hr/>
             <hr/>
 
