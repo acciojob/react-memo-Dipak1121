@@ -58,7 +58,7 @@ const App = ()=>{
             <input id="skill-input" type="text" placeholder="Enter Skill"
             onChange={handleSkill}
             value={skill}></input>
-            <button onClick={addMemo}> Add Skill </button>
+            <button id="skill-btn" onClick={addMemo}> Add Skill </button>
             <ul>
                 {
                     memoSkill.map((item, index)=>{
